@@ -1,0 +1,23 @@
+<%- include('partials/headerlogin.ejs'); -%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/loginsuccesfull">
+      <h1><%= msg %> Succesfull</h1>
+      <img class="icon" src="rigth-removebg-preview.png">
+    </form>
+    <div class="register-link">
+      <p><%= para %><br> <a style="margin-top: 5px;" href="<%= to %>"><%= link %></a></p>
+    </div>
+  </div>
+</body>
+</html>

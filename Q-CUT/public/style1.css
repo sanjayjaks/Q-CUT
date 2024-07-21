@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #CC0E00;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+}
+.title{
+    margin-left: 40px;
+    padding-left: 10px;
+    height: 60px;
+    width: 90px;
+    object-fit: cover;
+}
+.bt{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+.text{
+    margin-left: 20px;
+    margin-top: 7.5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    color: white;
+    padding-top: 6px;
+    font-size:larger;
+    font-family: "Poetsen One", sans-serif;
+}
+.login{
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer; 
+    outline: none; 
+    transition: 0.2s all;
+    margin-bottom: 15px;
+}
+.login:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.login1{
+    background-color: #CC0E00;
+    border: none;
+    margin-top: 2px;
+    margin-right: 20px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer; 
+    outline: none; 
+    transition: 0.2s all;
+    margin-bottom: 15px;
+}
+.dropdown{
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+  
+  .dropdown .dropbtn {
+    font-size: 10px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    background-color: #CC0E00;
+    float: none;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #942323;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.signin{
+    background-color: #F0BBB7;
+    border: none;
+    color: #CC0E00;
+    font-weight: bold;
+}
+.signin:hover{
+    background-color: #CC0E00;
+    color: #F0BBB7;
+    border: solid;
+    border-color: white;
+}
+.signup{
+    margin-right: 20px;
+    background-color: white;
+    color: #CC0E00;
+    font-weight: bold;
+    border: solid;
+    border-color: white;
+    margin-right: 2.5px;
+}
+.signup:hover{
+    background-color: rgb(230, 226, 179);
+    border: none;
+    color: #CC0E00;
+    font-weight: bold;
+}
+.pressed{
+    display: none;
+    color: black;
+}
+.hi{
+    padding: 22.5px;
+    text-decoration: none;
+    color: #CC0E00;
+}
+.icon{
+    margin-top: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.hi:hover{
+    color: white;
+}
+.subbox{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 2px;
+    font-size: 15.5px;
+}
+p{
+    margin-bottom: 0;
+}
+h3{
+    margin-bottom: 0;
+}
+.subhead{
+    font-weight: bold;
+}
+hr{
+    margin: auto;
+    width: 90%;
+}
+.subtitle{
+    margin-left: 61px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+}
+.viewmore{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.view{
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 70px;
+}
+.gallery{
+    height:285px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 0px;
+}
+.gallery1{
+    height:285px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 0px;
+}
+.gallery2{
+    height:285px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 0px;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+.columns{
+    object-fit: contain;
+    border: none;
+    height: 200px;
+    width: 220px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 2px rgb(0,0,0,0.1);
+    transition: 1s;
+}
+.foodimgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columns:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.circle{
+    height: 200px;
+    width: 220px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+.foodtitle{
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.symbol{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery1::-webkit-scrollbar{
+    display: none;
+}
+.gallery2::-webkit-scrollbar{
+    display: none;
+}
+.buttonimg{
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+}
+.biryani{
+    margin-left: 20px;
+}
+.bestrest{
+    margin-top: 50px;
+}
+.footer{
+    margin-top: 30px;
+    background-color: #CC0E00;
+    color: #f9f9f9;
+}
+.imgsearch{
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.searchbar {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.centered {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.centered1 {
+    display: flex;
+    font-family: "Source Sans 3", sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    background-color: white;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+select{
+    margin: 0;
+    padding: 0;
+}
+.searchicon{
+    background-color:#CC0E00;
+    font-weight: bold;
+    border-radius: 5px;
+}
+input{
+    width: 500px;
+}
+.headinganchor{
+    text-decoration: none;
+    color: black;
+}

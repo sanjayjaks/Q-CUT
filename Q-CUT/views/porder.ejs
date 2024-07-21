@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previously Ordered Items</title>
+    <link rel="stylesheet" href="porder.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Previously Ordered Items</h1>
+        
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <tr>
+                    <td>Order Number:</td>
+                    <td>#123456</td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td>June 26, 2024</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>$65</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ordered-items">
+            <h2>Items Ordered</h2>
+            <% data.forEach((order) => { %>
+            <div class="item">
+                <img src="./IMAGES/<%= order.image %>.png" alt="<%= order.name %>">
+                <div class="item-details">
+                    <h3><%= order.name %></h3>
+                    <p><%= order.price %></p>
+                </div>
+                <form action="/submit-review" method="POST">
+                    <div class="review">
+                        <h4>Leave a Review:</h4>
+                        <div class="star-rating" data-item="<%= order.order_id %>">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                        <input type="hidden" id="rating<%= order.order_id %>" name="rating" value="">
+                        <input type="hidden" name="order_id" value="<%= order.order_id %>">
+                        <textarea id="review<%= order.order_id %>" name="review" placeholder="Write your review here..."></textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+    <a href="/homepage"><button> home</button></a>
+
+    <script src="porder.js"></script>
+</body>
+</html>

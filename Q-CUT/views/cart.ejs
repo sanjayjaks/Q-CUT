@@ -1,0 +1,80 @@
+<%- include('partials/headercart.ejs'); -%>
+<main>
+    <div class="header">
+        <div class="imglogo">
+            <a href="/homepage"><img class="imglogo1" src="./IMAGES/Q-CUT__3_-removebg-preview.png" alt="Logo"></a>
+        </div>
+        <div class="content">
+            <a href="/homepage" class="headinganchor"><p class="content1">Home</p></a>
+            <a href="/dinein" class="headinganchor"><p class="content1">Din-In</p></a>
+            <a href="/contact" class="headinganchor"><p class="content1">Contact us</p></a>
+            <a href="/aboutus" class="headinganchor"><p class="content1">About us</p></a>
+        </div>
+        <div class="login">
+            <div class="basket1">
+                <span class="dot" id="doticon"></span>
+                <img class="basket1" src="./IMAGES/bag_icon.png" alt="Basket">
+            </div>
+            <div class="dropdown basket1">
+              <img class="basket" src="./IMAGES/profile_icon.png" alt="Profile" id="profileDropdown" onclick="toggleDropdown()">
+              <ul class="dropdown-menu" id="dropdownMenu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/">Logout</a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-content">
+           <% data.forEach(food => { %>
+                
+                    <div class="cart-item">
+                                    <div class="item-image"><img src="IMAGES/<%= food.image %>.png" alt="Greek Salad"></div>
+                                    <div class="item-details">
+                                        <div class="item-title"><%= food.name %></div>
+                                        <div class="item-price">₹<%= food.price %></div>
+                                        <div class="item-quantity"><input type="number" value="2" min="1"></div>
+                                        <div class="item-total"><%= food.price %></div>
+                                        <form method="post" action="/remove">
+                                            <input type="hidden" name="id" value="<%= food.id %>">
+                                            <input type="submit" value="-" class="remove">
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                    
+            <%    }); %>
+            
+        </div>
+        <div class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div class="totals">
+                <div class="totals-row">
+                    <span>Subtotal</span>
+                    <p class="totalprice">$60</p>
+                </div>
+                <div class="totals-row">
+                    <span>Delivery Fee</span>
+                    <p>30</p>
+                </div>
+                <div class="totals-row total">
+                    <span>Total</span>
+                    <p class="total1">$65</p>
+                </div>
+            </div>
+            <a href="/ordersuccesful" class="checkout-button">PROCEED TO CHECKOUT</a>
+        </div>
+    </div>
+
+    <div class="promo-code">
+        <p>If you have a promo code, Enter it here</p>
+        <input type="text" placeholder="promo code">
+        <button>Submit</button>
+    </div>
+</main>
+<script src="cartindex.js"></script>
+</body>
+</html>

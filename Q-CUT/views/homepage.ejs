@@ -1,0 +1,140 @@
+<%- include('partials/headerhomepage.ejs'); -%>
+<div class="header">
+    <div class="imglogo">
+      <a href="/homepage"><img class="imglogo1" src="./IMAGES/Q-CUT__3_-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <div class="content">
+      <a href="/homepage" class="headinganchor"><p class="content1">Home</p></a>
+      <a href="/dinein" class="headinganchor"><p class="content1">Din-In</p></a>
+      <a href="/contact" class="headinganchor"><p class="content1">Contact us</p></a>
+      <a href="/aboutus" class="headinganchor"><p class="content1">About us</p></a>
+    </div>
+    <div class="login">
+        <div class="basket1">
+            <span class="dot" id="doticon"></span>
+            <a href="/cart"><img class="basket" src="./IMAGES/bag_icon.png" alt="Basket"></a>
+        </div>
+        <div class="dropdown basket1">
+          <img class="basket" src="./IMAGES/profile_icon.png" alt="Profile" id="profileDropdown" onclick="toggleDropdown()">
+          <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="/perviouslyordered">Orders</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/logout">Logout</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+<div class="body">
+    <img class="headerimg" src="./IMAGES/header_img.png" alt="Header Image">
+    <div class="imgtext">
+        <h1>Welcome to Q-CUT<br>Order your Favourite food</h1>
+        <p>Order delicious food or</p><p>select a time and place to Din-In</p>
+    </div>
+</div>
+<div class="menu">
+    <div class="heading">
+       <h2>Explore Our Menu</h2>
+       <p>Choose from a diverse menu featuring a delectable array of dishes</p>
+       <p>our mission is to satify ur cravings</p>
+    </div>
+</div>
+<div class="menuitems">        
+</div>
+<div class="topdishes">
+    <hr>
+</div>
+<div class="menu">
+    <div class="heading">
+       <h2>Top dishes to order</h2>
+       <p>Choose from a diverse menu featuring a delectable array of dishes</p>
+       <p>our mission is to satify ur cravings</p>
+    </div>
+    <div class="viewmore">
+      <a href="/viewmore"><p href="/viewmore">view more</p></a>
+    </div>
+</div>
+<div class="order" href="/add">
+<div class="card">
+    <img src="./IMAGES/food_19.png">
+    <div class="card-content">
+        <div class="card-title">hi</div>
+        <div class="stars">★★★★☆</div>
+        <div class="card-text">Food provides essential nutrients for overall health and well-being</div>
+        <div class="card-price">200</div>
+        
+    </div>
+</div>  
+</div> 
+<div class="my">
+
+</div>
+
+<div class="menu">
+    <div class="heading">
+       <h2>Dine In</h2>
+       <p>Choose from a diverse menu featuring a delectable array of dishes</p>
+       <p>our mission is to satify ur cravings</p>
+    </div>
+    <div class="viewmore">
+    <form action="/dinein">
+      <button class="viewbtn">view more</button>
+    </form>
+    </div>
+  </div>
+
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top" style="margin-bottom: 0;">
+  <div class="col mb-3">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="30"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <p class="text-body-secondary" style="margin-left: 20px;">© 2024</p>
+  </div>
+
+  <div class="col mb-3">
+
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="homepage.js"></script>
+<script src="data.js"></script>
+<script src="index.js"></script>
+<script src="sql.js"></script>
+<script src="bag.js"></script>
+<script src="index1.js"></script>
+</body>
+</html>
